@@ -4,6 +4,7 @@
   align-items: center;
   height: 360px;
   background-color: #eee;
+  border-bottom: 1px solid #dfdede;
 }
 
 .Main-content {

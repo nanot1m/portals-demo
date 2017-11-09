@@ -1,0 +1,50 @@
+.UserCard-root {
+  display: inline-block;
+  padding: 1em 1.5em;
+  margin-bottom: 1em;
+  border-radius: 3px;
+  background: white;
+  border: 1px solid #dfdede;
+  min-width: 200px;
+  margin: 0.5em;
+}
+
+.UserCard-infoRow {
+  display: flex;
+}
+
+.UserCard-infoRow + .UserCard-infoRow {
+  margin-top: 1em;
+}
+
+.UserCard-label {
+  flex: 1;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.UserCard-value {
+  flex: 3;
+}
+
+.UserCard-menu {
+  background: #eee;
+  border-top: 1px solid #dfdede;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.2em;
+  margin: 1em -1.5em -1em;
+}
+
+.UserCard-menuItem {
+  margin: 0 0.25em;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #dfdede;
+  border-radius: 3px;
+  transition: all 0.12s ease-out;
+}
+
+.UserCard-menuItem:hover {
+  background: #dfdede;
+}

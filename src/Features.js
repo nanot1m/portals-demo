@@ -6,6 +6,8 @@ import { DetachedRootExample } from './modules/DetachedRootExample'
 import { Main } from './modules/Main'
 import { ClickOutsideExample } from './modules/ClickOutsideExample/index'
 import { SlotsExample } from './modules/SlotsExample'
+import { UserEditor } from './modules/UserEditor'
+import { UserDelete } from './modules/UserDelete'
 
 const AppRoutes = () => (
   <Aux>
@@ -20,5 +22,7 @@ export const Features = () => (
   <Aux>
     <Main />
     <AppRoutes />
+    <UserEditor />
+    <UserDelete />
   </Aux>
 )
