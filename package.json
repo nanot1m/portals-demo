@@ -2,7 +2,7 @@
   "name": "portals-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://myusername.github.io/my-app",
+  "homepage": "https://nanot1m.github.io/portals-demo",
   "dependencies": {
     "@skbkontur/react-ui": "^0.9.9",
     "gh-pages": "^1.0.0",
