@@ -44,3 +44,10 @@
 .Main-menuItem:active {
   transform: translateY(1px);
 }
+
+.Main-footer {
+  margin: auto;
+  padding: 3em 6em;
+  display: flex;
+  justify-content: flex-end;
+}

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import Aux from 'react-aux'
 import { Slot, Fill } from 'react-slot-fill'
 import { NavLink } from 'react-router-dom'
+import Link from '@skbkontur/react-ui/Link'
 
 import { AppRoute } from '../../App'
 import portalLogo from './portal-logo.png'
@@ -25,6 +26,11 @@ export const Main = () => (
             <Slot name="MainMenu.Item" />
           </div>
         </div>
+        <footer className="Main-footer">
+          <Link href="https://github.com/nanot1m/portals-demo">
+            github.com/nanot1m/portals-demo
+          </Link>
+        </footer>
       </Aux>
     )}
   />

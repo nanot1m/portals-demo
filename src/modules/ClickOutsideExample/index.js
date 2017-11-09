@@ -207,7 +207,7 @@ So using *focus* event.
 without possibilty to cancell bubbling.
 Use *debounce* to capture only first focus event
 Mozilla Firefix
-  ¯\_(ツ)_/¯
+  ¯\\_(ツ)_/¯
 `
 
 const Firefix = () => <Pre language="markdown">{firefix}</Pre>
