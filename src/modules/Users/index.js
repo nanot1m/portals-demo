@@ -20,13 +20,23 @@ const InitialUsers = [
   },
   {
     id: 2,
+    name: 'Mariam',
+    age: 18
+  },
+  {
+    id: 3,
     name: 'Muhamed',
     age: 22
   },
   {
-    id: 3,
+    id: 4,
     name: 'Musa',
     age: 23
+  },
+  {
+    id: 5,
+    name: 'Milena',
+    age: 16
   }
 ]
 

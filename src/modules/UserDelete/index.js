@@ -8,7 +8,7 @@ import Checkbox from '@skbkontur/react-ui/Checkbox'
 
 export class UserDelete extends React.Component {
   state = {
-    enabled: true
+    enabled: false
   }
 
   render() {

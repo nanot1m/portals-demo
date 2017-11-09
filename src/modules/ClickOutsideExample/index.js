@@ -28,6 +28,7 @@ export const ClickOutsideExample = withState(
           <Tabs.Tab id="InputInTooltip">Input In Tooltip</Tabs.Tab>
           <Tabs.Tab id="NestedTooltip">Nested Tooltip</Tabs.Tab>
           <Tabs.Tab id="HowToFindPortals">How To Find Portals</Tabs.Tab>
+          <Tabs.Tab id="Firefix">Firefix</Tabs.Tab>
         </Tabs>
       </div>
       {(() => {
@@ -38,6 +39,8 @@ export const ClickOutsideExample = withState(
             return <NestedTooltip />
           case 'HowToFindPortals':
             return <HowToFindPortals />
+          case 'Firefix':
+            return <Firefix />
           default:
             return null
         }
@@ -196,5 +199,17 @@ const HowToFindPortals = () => (
     <Pre language={'js'}>{findPortal}</Pre>
   </Aux>
 )
+
+const firefix = `\
+Firefox do not supports *focusin* event.
+So using *focus* event.
+*focus* events bubbles multiple time
+without possibilty to cancell bubbling.
+Use *debounce* to capture only first focus event
+Mozilla Firefix
+  ¯\_(ツ)_/¯
+`
+
+const Firefix = () => <Pre language="markdown">{firefix}</Pre>
 
 const handleKeyDown = ({ key }) => Toast.push(key)

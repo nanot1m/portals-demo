@@ -12,7 +12,7 @@ import Gapped from '@skbkontur/react-ui/Gapped'
 
 export class UserEditor extends React.Component {
   state = {
-    editingEnabled: true
+    editingEnabled: false
   }
 
   render() {
