@@ -146,10 +146,43 @@ const portalHtml = `<body>
 
   <!-- ... -->
 
-  <div data-container-root-id="0">
+  <div data-portal-container-id="0">
     <!-- Tooltip Content -->
   </div>
 </body>
+`
+
+const findPortal = `function findPortal(
+  node: HTMLElement,
+  rootNode: HTMLElement,
+  container?: HTMLElement
+): ?HTMLElement {
+  const currentNode = node.parentElement;
+  if (
+    !currentNode ||
+    currentNode === rootNode ||
+    currentNode === document.body
+  ) {
+    return container ? container : null;
+  }
+
+  const newContainerId = currentNode.getAttribute('data-portal-container-id');
+  if (newContainerId) {
+    const nextNode = document.querySelector(
+      \`noscript[data-portal-root-id="\${newContainerId}"]\`
+    );
+
+    if (!nextNode) {
+      throw Error(
+        \`Origin node for container with id \${newContainerId} was not found\`
+      );
+    }
+
+    return findPortal(nextNode, rootNode, nextNode);
+  }
+
+  return findPortal(currentNode, rootNode, container);
+}
 `
 
 const HowToFindPortals = () => (
@@ -158,6 +191,9 @@ const HowToFindPortals = () => (
 
     <h3>Mark portals</h3>
     <Pre>{portalHtml}</Pre>
+
+    <h3>Find portals (:</h3>
+    <Pre language={'js'}>{findPortal}</Pre>
   </Aux>
 )
 

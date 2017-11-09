@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Example } from '../../components/Example/index'
 
-export const RoutePath = '/detached-roots'
+export const RoutePath = '/detached-roots-example'
 
 export const DetachedRootExample = () => (
   <Example path={RoutePath} name="Detached Roots">
