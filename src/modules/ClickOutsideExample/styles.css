@@ -1,0 +1,23 @@
+.ClickOutside-tabs {
+  background: #eee;
+  border-radius: 3px;
+  padding: 0.25em 1em 0;
+}
+
+.ClickOutside-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+.ClickOutside-list {
+  margin-top: 0;
+  width: 400px;
+}
+
+.ClickOutside-list li {
+  font-size: 18px;
+  margin-bottom: 0.5em;
+  line-height: 26px;
+}

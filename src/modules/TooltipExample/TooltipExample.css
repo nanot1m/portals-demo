@@ -1,0 +1,29 @@
+.TtExample-tabs {
+  background: #eee;
+  border-radius: 3px;
+  padding: 0.25em 1em 0;
+}
+
+.TtExample-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.TtExample-block {
+  flex: 1;
+  border: 1px solid #dfdede;
+  padding: 1em 1.5em 3em;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: auto 10px;
+}
+
+.TtExample-blockHeader {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.TtExample-pre {
+  flex: 1 1 100%;
+}
